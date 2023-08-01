@@ -1,6 +1,6 @@
 /********** Template CSS **********/
 :root {
-    --primary: #ffc107;
+    --primary: #f5d906;
     --secondary: #FF0F10;
     --light: #F2F2F2;
     --dark: #1D2833;
@@ -168,7 +168,8 @@ h6,
     }
 
     .sticky-top.navbar-light .navbar-brand h1 {
-        color: var(--primary);
+        color:#000;
+        /*color: var(--primary);*/
     }
 }
 
