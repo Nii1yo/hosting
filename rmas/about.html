@@ -180,8 +180,10 @@
                     <div class="col-12">
                         <h5 class="fw-bold text-white mb-4">Subscribe Our Newsletter</h5>
                         <div class="position-relative" style="max-width: 400px;">
-                            <input class="form-control bg-white border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Enter your email">
-                            <button type="button" class="btn btn-primary py-2 px-3 position-absolute top-0 end-0 mt-2 me-2">Submit</button>
+                            <form action="https://formspree.io/f/mqkvpkod" method="POST">
+                                <input class="form-control bg-white border-0 w-100 py-3 ps-4 pe-5" type="email" placeholder="Enter your email" name="email" required>
+                                <button class="btn btn-primary py-2 px-3 position-absolute top-0 end-0 mt-2 me-2">Submit</button>
+                            </form>
                         </div>
                     </div>
                     <div class="col-lg-5 col-md-12">
@@ -204,7 +206,7 @@
                     <div class="col-md-6 col-lg-3">
                         <h5 class="fw-bold text-white mb-4">Get In Touch</h5>
                         <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>No.120b,Spintex Road Industrial Area</p>
-                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>0277595009</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>0277595009 | 0243961602</p>
                         <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@rmasgh.com</p>
                         <div class="d-flex pt-2">
                             <a class="btn btn-outline-light btn-social" href="https://twitter.com/rmasbroker"><i class="fab fa-twitter"></i></a>
@@ -212,17 +214,15 @@
                             <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/rmasbroker/?next=%2F"><i class="fab fa-instagram"></i></a>
                             <a class="btn btn-outline-light btn-social" href="https://www.linkedin.com/company/96071081/admin/feed/posts/?shareMsgArgs=null"><i class="fab fa-linkedin-in"></i></a>
                         </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 mt-lg-n5">
-                        <!--<div class="bg-light rounded" style="padding: 30px;">
-                            <input type="text" class="form-control border-0 py-2 mb-2" placeholder="Name">
-                            <input type="email" class="form-control border-0 py-2 mb-2" placeholder="Email">
-                            <textarea class="form-control border-0 mb-2" rows="2" placeholder="Message"></textarea>
-                            <button class="btn btn-primary w-100 py-2">Send Message</button>
-                        </div>-->
-                        <div class="border rounded text-center p-4 mt-4">
-                            <h3 class="fw-bold mb-4">Send Email</h3>
-                            <a class="btn btn-primary py-3 px-5" href="mailto: abc@example.com">Send</a>
+                </div>
+                     <div class="col-md-6 col-lg-4 mt-lg-n5">
+                        <div class="bg-light rounded" style="padding: 30px;">
+                            <form action="https://formspree.io/f/mqkvpkod" method="POST">
+                                <input type="text" class="form-control border-0 py-2 mb-2" placeholder="Name" name="name" required>
+                                <input type="email" class="form-control border-0 py-2 mb-2" placeholder="Email" name="email" required>
+                                <textarea class="form-control border-0 mb-2" rows="2" placeholder="Message" name="message" required></textarea>
+                                <button class="btn btn-primary w-100 py-2">Send Message</button>
+                            </form>
                         </div>
                     </div>
                 </div>
