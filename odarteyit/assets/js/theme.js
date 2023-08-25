@@ -101,3 +101,26 @@ $('document').ready(function() {
   new WOW().init();
 });
 
+// script.js
+
+document.addEventListener("DOMContentLoaded", function () {
+  const carouselItems = document.querySelectorAll(".carousel-item");
+  let currentSlide = 0;
+
+  function showSlide(slideIndex) {
+    carouselItems.forEach((item, index) => {
+      if (index === slideIndex) {
+        item.classList.add("active");
+      } else {
+        item.classList.remove("active");
+      }
+    });
+  }
+
+  function nextSlide() {
+    currentSlide = (currentSlide + 1) % carouselItems.length;
+    showSlide(currentSlide);
+  }
+
+  setInterval(nextSlide, 15000); // Change slide every 15 seconds
+});

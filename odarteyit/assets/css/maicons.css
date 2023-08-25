@@ -2635,28 +2635,5 @@
 
 
 
-/* slider effect */
-.carousel-inner {
-  position: relative;
-}
 
-.carousel-item {
-  position: relative;
-  opacity: 0;
-  animation: carouselAnimation 10s infinite;
-  /*Adjusttimingasneeded*/-webkit-animation: carouselAnimation 5s infinite;
-  -webkit-animation: carouselAnimation 10s infinite;
-}
 
-.carousel-item.active {
-  opacity: 1;
-}
-
-@keyframes carouselAnimation {
-  0%, 100% {
-      opacity: 0;
-  }
-  20%, 80% {
-      opacity: 1;
-  }
-}
