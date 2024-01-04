@@ -101,3 +101,15 @@
     
 })(jQuery);
 
+function togglePopup(header) {
+    const popupId = header.nextElementSibling.id;
+    const popup = document.getElementById(popupId);
+    popup.style.display = popup.style.display === "none" ? "block" : "none";
+  }
+  
+  function closePopup() {
+    const popups = document.querySelectorAll(".popup");
+    popups.forEach(popup => popup.style.display = "none");
+  }
+  
+

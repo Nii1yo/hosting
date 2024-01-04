@@ -52,17 +52,10 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto py-0">
-                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
                         <a href="about.html" class="nav-item nav-link">About</a>
                         <a href="services.html" class="nav-item nav-link">Services</a>
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Blog</a>
-                            <div class="dropdown-menu m-0">
-                                <a href="social.html" class="dropdown-item active">Social Media</a>
-                                <a href="testimonial.html" class="dropdown-item">Insurance New</a>
-                                <!--<a href="comparison.html" class="dropdown-item">Comparison</a>-->
-                            </div>
-                        </div>
+                        <a href="blog.html" class="nav-item nav-link">Blog</a>
                         <a href="contact.html" class="nav-item nav-link">Contact</a>
                     </div>
                 </div>
@@ -73,124 +66,116 @@
                     <div class="row g-5 pt-5">
                         <div class="col-12 text-center text-lg-start">
                             <h1 class="display-4 text-white animated slideInLeft">Blog</h1>
-                            <h3>We say it first!</h3>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <h1 class="card-body">Page under development</h1>
-        <!-- Navbar & Hero End -->
 
-        <!--blog
-        <section class="main-content">
-            <article class="blog-post">
-                <h2>Post Title</h2>
-                <p class="post-meta">Posted on August 9, 2023 by John Doe</p>
-                <p>This is the content of the blog post...</p>
-                <a href="#" class="read-more">Read more</a>
-            </article>
-    
-            <article class="blog-post">
-                <h2>Another Post Title</h2>
-                <p class="post-meta">Posted on August 8, 2023 by Jane Smith</p>
-                <p>This is another blog post's content...</p>
-                <a href="#" class="read-more">Read more</a>
-            </article>
-            blog end-->
-    
-            <!-- More blog posts can be added here -->
-        </section>
-    
+            <div class="page-section">
+            <div class="container">
 
-        <!-- Full Screen Search Start
-        <div class="modal fade" id="searchModal" tabindex="-1">
-            <div class="modal-dialog modal-fullscreen">
-                <div class="modal-content" style="background: rgba(29, 40, 51, 0.8);">
-                    <div class="modal-header border-0">
-                        <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <!--<div class="row">
+                <div class="col-sm-9">
+                  <form action="#" class="form-search-blog">
+                    <div class="input-group">
+                      <div class="">
+                        <select id="categories" class="custom-select bg-light">
+                          <option>All Categories</option>
+                          <option value="travel">Travel</option>
+                          <option value="lifestyle">LifeStyle</option>
+                          <option value="healthy">Healthy</option>
+                          <option value="food">Food</option>
+                        </select>
+                      </div>
+                      <input type="text" class="form-control" placeholder="Enter keyword..">
                     </div>
-                    <div class="modal-body d-flex align-items-center justify-content-center">
-                        <div class="input-group" style="max-width: 600px;">
-                            <input type="text" class="form-control bg-transparent border-light p-3" placeholder="Type search keyword">
-                            <button class="btn btn-light px-4"><i class="bi bi-search"></i></button>
-                        </div>
-                    </div>
+                  </form>
                 </div>
+                <div class="col-sm-2 text-sm-right">
+                  <button class="btn btn-secondary">Filter <span class="mai-filter"></span></button>
+                </div>
+              </div>-->
+
+
+        <!--blogging-->
+              <div class="row my-5">
+                <div class="col-lg-4 py-3">
+                  <div class="blog-header" onclick="togglePopup(this)">
+                    <h5>Akosombo Dam spillage: Victims receive support from Risk Management and Advisory Services</h5>
+                    <div class="post-date">Posted on <a href="#">27 Jan 2020</a></div>
+                    <div class="testimonial-item position-relative bg-light border-top border-5 border-primary rounded p-4 my-4">
+                      <img class="img-fluid animated zoomIn" src="img/blog1.jpg" alt="">
+                  </div>
+                  </div>
+                  <!--blog detail message-->
+                  <div class="popup" id="popup1">
+                    <div class="popup-content">
+                      <h3>Akosombo Dam spillage:</h3>
+                      <p>The staff and management of Risk Management and Advisory Services Limited have extended a helping hand to victims of the Akosombo Dam spillage during a visit to the three districts affected by the spillage.</p>
+                      <button class="close-button" onclick="closePopup()">Close</button>
+                    </div>
+                  </div> 
+                </div>
+                <!--blog2-->
+                <div class="col-lg-4 py-3">
+                  <div class="blog-header" onclick="togglePopup(this)">
+                    <h5>MR. LARRY KWESI JIAGGE PRESENTS $1200 DOLLARS TO KETASCO NSMQ TEAM</h5>
+                    <div class="post-date">Posted on <a href="#">27 Jan 2020</a></div>
+                    <div class="testimonial-item position-relative bg-light border-top border-5 border-primary rounded p-4 my-4">
+                      <img class="img-fluid animated zoomIn" src="img/keta.png" alt="">
+                  </div>
+                  </div>
+                  <!--blog detail message-->
+                  <div class="popup" id="popup2">
+                    <div class="popup-content">
+                      <h3>MR. LARRY KWESI JIAGGE PRESENTS $1200 DOLLARS</h3>
+                      <p>Mr. Jiagge Larry Kwesi, the Managing Director of Risk Management and Advisory Services (RMAS)  has presented a cash donation of One Thousand Two Hundred Dollars ($1200) to the Ketasco, National Science and Maths Quiz (NSMQ) Team.</p>
+                      <button class="close-button" onclick="closePopup()">Close</button>
+                    </div>
+                  </div> 
+                </div>
+                <!--blog3-->
+                <div class="col-lg-4 py-3">
+                  <div class="blog-header" onclick="togglePopup(this)">
+                    <h5>MR. LARRY KWESI JIAGGE PRESENTS $1200 DOLLARS TO KETASCO NSMQ TEAM</h5>
+                    <div class="post-date">Posted on <a href="#">27 Jan 2020</a></div>
+                    <div class="testimonial-item position-relative bg-light border-top border-5 border-primary rounded p-4 my-4">
+                      <img class="img-fluid animated zoomIn" src="img/so2.png" alt="">
+                  </div>
+                  </div>
+                  <!--blog detail message-->
+                  <div class="popup" id="popup3">
+                    <div class="popup-content">
+                      <h3>Detailed Story Content</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam faucibus sapien eu neque sagittis, ut ullamcorper lectus condimentum.</p>
+                      <button class="close-button" onclick="closePopup()">Close</button>
+                    </div>
+                  </div> 
+                </div>
+                
+              </div>
+        
+              <!--<nav aria-label="Page Navigation">
+                <ul class="pagination justify-content-center">
+                  <li class="page-item disabled">
+                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item active" aria-current="page">
+                    <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                  </li>
+                </ul>
+              </nav>-->
+        
             </div>
-        </div>
-        Full Screen Search End -->
-
-
-        <!-- Team Start 
-        <div class="container-xxl py-5">
-            <div class="container px-lg-5">
-                <div class="section-title position-relative text-center mx-auto mb-5 pb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                    <h1 class="mb-3">Our Team Members</h1>
-                    <p class="mb-1">Vero justo sed sed vero clita amet. Et justo vero sea diam elitr amet ipsum eos
-                        ipsum clita duo sed. Sed vero sea diam erat vero elitr sit clita.</p>
-                </div>
-                <div class="row g-4">
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="team-item border-top border-5 border-primary rounded shadow overflow-hidden">
-                            <div class="text-center p-4">
-                                <img class="img-fluid rounded-circle mb-4" src="img/team-1.jpg" alt="">
-                                <h5 class="fw-bold mb-1">Full Name</h5>
-                                <small>Designation</small>
-                            </div>
-                            <div class="d-flex justify-content-center bg-primary p-3">
-                                <a class="btn btn-square text-primary bg-white m-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square text-primary bg-white m-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square text-primary bg-white m-1" href=""><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="team-item border-top border-5 border-primary rounded shadow overflow-hidden">
-                            <div class="text-center p-4">
-                                <img class="img-fluid rounded-circle mb-4" src="img/team-2.jpg" alt="">
-                                <h5 class="fw-bold mb-1">Full Name</h5>
-                                <small>Designation</small>
-                            </div>
-                            <div class="d-flex justify-content-center bg-primary p-3">
-                                <a class="btn btn-square text-primary bg-white m-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square text-primary bg-white m-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square text-primary bg-white m-1" href=""><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="team-item border-top border-5 border-primary rounded shadow overflow-hidden">
-                            <div class="text-center p-4">
-                                <img class="img-fluid rounded-circle mb-4" src="img/team-3.jpg" alt="">
-                                <h5 class="fw-bold mb-1">Full Name</h5>
-                                <small>Designation</small>
-                            </div>
-                            <div class="d-flex justify-content-center bg-primary p-3">
-                                <a class="btn btn-square text-primary bg-white m-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square text-primary bg-white m-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square text-primary bg-white m-1" href=""><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-                        <div class="team-item border-top border-5 border-primary rounded shadow overflow-hidden">
-                            <div class="text-center p-4">
-                                <img class="img-fluid rounded-circle mb-4" src="img/team-4.jpg" alt="">
-                                <h5 class="fw-bold mb-1">Full Name</h5>
-                                <small>Designation</small>
-                            </div>
-                            <div class="d-flex justify-content-center bg-primary p-3">
-                                <a class="btn btn-square text-primary bg-white m-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square text-primary bg-white m-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square text-primary bg-white m-1" href=""><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        Team End -->
+          </div>
+          <!--Blog end-->
+        
         
 
         <!-- Footer Start -->
